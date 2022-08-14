@@ -54,14 +54,16 @@ function makeGrid(size = 16) {
 makeGrid();
 
 
-let arr = [];
-for (let i = 0; i < 10000; i++){
-    arr[i] = 0;
-}
 
 let size2 = 16;
 
 function mouseEvent(){
+    let arr = [];
+    for (let i = 0; i < 10000; i++){
+    arr[i] = 0;
+    }   
+
+
     const rowElements = document.querySelectorAll('.rowElement');
     rowElements.forEach(rowElement => rowElement.addEventListener('mouseover', (event) => {
         //event.target.style.backgroundColor = `rgb(${randomBetween(0, 255)}, ${randomBetween(0, 255)}, ${randomBetween(0, 255)} )`;
